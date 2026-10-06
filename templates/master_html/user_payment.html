@@ -1,0 +1,31 @@
+
+<form  action="/user_payment" method="post" name="form1" id="form1">
+<div class="title-content text-center">
+          
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">Payment Details </h3>
+  </div>
+  <table width="526" height="175" align="center">
+  
+    <tr>
+      <td><div align="center">Product Name </div></td>
+      <td><div align="center">Brand</div></td>
+      <td><div align="center">Amount</div></td>
+      <td><div align="center">Price Reqeust </div></td>
+      <td><div align="center"></div></td>
+    </tr>
+	 {% for row in items %}
+    <tr>
+      
+      <td><div align="center">{{ row[1] }}</div></td>
+      <td><div align="center">{{ row[2] }}</div></td>
+      <td><div align="center">{{ row[3] }}</div></td>
+      <td><div align="center">{{ row[6] }}</div></td>
+    <td><div align="center"><a href="/user_pay/{{ row[0] }}">Pay</a></div></td>
+    </tr>
+	{% endfor %}
+  </table>
+</form>
+<p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

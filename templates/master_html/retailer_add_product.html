@@ -1,0 +1,45 @@
+<form  action="/retailer_add_product" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<div class="title-content text-center">
+          
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">&nbsp;</h3>
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">Add Product </h3>
+</div>
+  <table width="420" height="235" align="center">
+    <tr>
+      <td width="190">Product Name </td>
+      <td width="218"><input name="product_name" type="text" id="product_name"   required="" /></td>
+    </tr>
+    <tr>
+      <td>Brand</td>
+      <td><input name="brand" type="text" id="brand"   required="" /></td>
+    </tr>
+    <tr>
+      <td>Starting Price </td>
+      <td><input name="starting_price" type="text" id="starting_price"   required="" /></td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>
+        <input type="file" name="file" />
+      </td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td><label>
+        <select name="category" id="category">
+          <option value="New">New</option>
+          <option value="Used Once">Used Once</option>
+          <option value="Old">Old</option>
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td> 
+        <input type="submit" name="btn" value="Add" />       </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</form>
+ 

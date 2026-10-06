@@ -1,0 +1,43 @@
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 24px}
+-->
+</style>
+
+   <form  action="/admin_view_user" method="post" enctype="multipart/form-data" name="form1" id="form1">
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="84%" height="147" border="0" align="center">
+  <tr>
+    <td colspan="7" bgcolor="#FFFFFF" class="tdsh"><div align="center" class="style2">Product Details </div></td>
+    </tr>
+  <tr>
+   
+    <td height="44" bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Product Name</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Brand</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Start Price </strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style3 style6"><strong>Image</strong></h5></td>
+    <td bgcolor="#FFFFFF" class="tdsh"><h5 align="center" class="style6 style2">Category</h5></td>
+  </tr>
+  {% for row in items %}
+  <tr> 
+    <td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[1] }}</div></td>
+<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[2] }}</div></td>
+<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[3] }}</div></td>
+<td class="tdsh" bgcolor="#FFFFFF" ><div align="center"><img src="static/uploads/{{ row[4] }}" width="50" height="50" /></div></td>
+<td class="tdsh" bgcolor="#FFFFFF" ><div align="center">{{ row[5] }}</div></td>
+    </tr>
+  {% endfor %}
+</table>
+</form>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>

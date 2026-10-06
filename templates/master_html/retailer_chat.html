@@ -1,0 +1,29 @@
+<form  action="/user_chat" method="post" name="form1" id="form1">
+<div class="title-content text-center">
+          
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">Chat</h3>
+  </div>
+  <table width="374" height="217" align="center">
+  {% for row in items %}
+	
+    <tr>
+      <td>Customer message </td>
+      <td><a href="/chat_view/{{ row[0] }}">{{ row[0] }} </a></td>
+    </tr>
+	{% endfor %}
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+	
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+ 

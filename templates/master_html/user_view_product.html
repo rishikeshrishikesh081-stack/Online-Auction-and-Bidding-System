@@ -1,0 +1,27 @@
+
+<form  action="/user_view_product" method="post" name="form1" id="form1">
+<div class="title-content text-center">
+          
+          <h3 align="center" class="title-w3l mb-sm-3 text-center">Products</h3>
+  </div>
+  <table width="342" height="153" align="center">
+   {% for row in items %}
+    <tr>
+      <td><a href="/bid_click/{{ row[0] }}"><img src="static/uploads/{{ row[4] }}" width="250" height="171" border="0" /></a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center">Products:{{ row[1] }} </div></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center">Starting Price:{{ row[3] }} </div></td>
+      <td>&nbsp;</td>
+    </tr>
+	{% endfor %}
+  </table>
+</form>
+<p></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
